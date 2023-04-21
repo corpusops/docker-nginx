@@ -1,4 +1,4 @@
-FROM library/nginx:1.14.2
+FROM library/nginx:1.20-alpine-perl
 ARG DO_UPDATE=y
 ARG NONINTERACTIVE=y
 ARG INSTALL_DEFAULT_LOCALE="fr_FR.UTF-8"
