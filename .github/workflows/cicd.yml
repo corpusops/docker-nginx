@@ -49,7 +49,6 @@ jobs:
           key: 6-${{ runner.os }}-${{ github.ref }}-${{ github.repository }}-venvstatics
       - name: setup
         run: set -e;i=$(whoami);sudo sh -c "chown -Rf $i .";
-             cd local/corpusops.bootstrap/;git status;cd -;
              sudo sh -c 'sed -i -re 's/azure.//' /etc/apt/sources.list && apt-get update -qq' && ./main.sh refresh_corpusops;
              sudo sh -c 'sed -i -re 's/azure.//' /etc/apt/sources.list && apt-get update -qq && apt-get install -qqy --force-yes parallel'
       - name: refresh images
