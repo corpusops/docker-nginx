@@ -1,4 +1,4 @@
-FROM library/nginx:perl
+FROM library/nginx:perl AS final
 ARG DO_UPDATE=y
 ARG NONINTERACTIVE=y
 ARG DEBIAN_FRONTEND=noninteractive
