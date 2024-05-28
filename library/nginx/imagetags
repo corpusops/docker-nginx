@@ -1,6 +1,7 @@
 1
 1-alpine
 1-alpine-perl
+1-alpine-slim
 1-perl
 1.10
 1.10-alpine
@@ -53,13 +54,16 @@
 1.23
 1.23-alpine
 1.23-alpine-perl
+1.23-alpine-slim
 1.23-perl
 alpine
 alpine-perl
+alpine-slim
 latest
 mainline
 mainline-alpine
 mainline-alpine-perl
+mainline-alpine-slim
 mainline-perl
 perl
 stable

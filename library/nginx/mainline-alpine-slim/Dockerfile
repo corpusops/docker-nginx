@@ -1,4 +1,4 @@
-FROM library/nginx:1.18
+FROM library/nginx:mainline-alpine-slim
 ARG DO_UPDATE=y
 ARG NONINTERACTIVE=y
 ARG DEBIAN_FRONTEND=noninteractive
