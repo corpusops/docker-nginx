@@ -1,4 +1,4 @@
-FROM library/nginx:1.15-alpine
+FROM library/nginx:1.15-alpine AS final
 ARG DO_UPDATE=y
 ARG NONINTERACTIVE=y
 ARG DEBIAN_FRONTEND=noninteractive

@@ -1,4 +1,4 @@
-FROM library/nginx:mainline
+FROM library/nginx:mainline AS final
 ARG DO_UPDATE=y
 ARG NONINTERACTIVE=y
 ARG DEBIAN_FRONTEND=noninteractive
