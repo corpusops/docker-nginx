@@ -822,6 +822,9 @@ do_refresh_corpusops() {
         if [[ -n $COPS_ROOT ]] && [ ! -e "$COPS_ROOT" ];then mkdir -p "$COPS_ROOT";fi
         vv .ansible/scripts/download_corpusops.sh
         vv .ansible/scripts/setup_corpusops.sh
+        if [ -e local/corpusops/corpusops.bootstrap/.git ];then
+            cd local/corpusops/corpusops.bootstrap/ && git pull && cd -
+        fi
     fi
 }
 
